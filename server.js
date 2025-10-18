@@ -27,6 +27,6 @@ app.get("*", (req, res) => {
 });
 
 //   Listen to port
-exports.expressServer = app.listen(process.env.PORT || 4000, () =>
+exports.expressServer = app.listen(process.env.PORT || 3000, () =>
   console.log("Listening...")
 );
