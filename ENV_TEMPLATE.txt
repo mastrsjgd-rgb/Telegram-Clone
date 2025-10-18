@@ -1,0 +1,26 @@
+# ملف قالب البيئة (.env)
+# انسخ هذا الملف إلى .env وقم بتعبئة القيم المطلوبة
+
+# منفذ السيرفر
+PORT=4000
+
+# رابط قاعدة بيانات MongoDB
+# ملاحظة: تأكد من ترميز الأحرف الخاصة في كلمة المرور
+# مثال: @ تصبح %40
+MONGO_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/DATABASE_NAME?retryWrites=true&w=majority&appName=Cluster0&serverSelectionTimeoutMS=30000&socketTimeoutMS=45000
+
+# مفتاح JWT السري (غير هذا في الإنتاج)
+JWT_SECRET=your-secret-key-for-jwt-tokens-change-this-in-production
+
+# مدة صلاحية JWT (بالأيام)
+JWT_EXPIRES_IN=90
+
+# إعدادات Cloudinary
+CLOUDINARY_NAME=your-cloudinary-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+
+# ملاحظات:
+# 1. لا تشارك هذا الملف مع أحد
+# 2. الملف .env مستثنى من git عبر .gitignore
+# 3. استخدم قيم آمنة للإنتاج
